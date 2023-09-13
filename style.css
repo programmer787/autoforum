@@ -1,0 +1,132 @@
+/* Resetowanie domyślnych stylów przeglądarki */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Stylizacja głównego kontenera */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  line-height: 1.6;
+}
+
+/* Stylizacja nagłówka */
+header {
+  background-color: #00bbff;
+  color: #fff;
+  text-align: center;
+  padding: 30px 0; /* Zwiększ padding */
+}
+
+header h1 {
+  font-family: "Helvetica Neue", sans-serif; /* Inna czcionka */
+  font-size: 42px; /* Zwiększ rozmiar czcionki */
+}
+
+/* Stylizacja nawigacji */
+nav {
+  background-color: #333; /* Ciemniejsze tło */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 15px 0; /* Zwiększ padding */
+}
+
+nav li {
+  margin: 0 30px; /* Zwiększ odstępy między elementami nawigacji */
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #3498db;
+}
+
+/* Animacja podkategorii */
+.nav-link {
+  position: relative;
+  display: inline-block;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #3498db;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Stylizacja sekcji z samochodami */
+.car-brand {
+  padding: 20px;
+  background-color: #fff; /* Białe tło */
+  margin: 10px; /* Zmniejsz margin */
+  border-radius: 10px; /* Zaokrąglij rogi */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Zwiększ cień */
+}
+
+.car-brand h1 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.car-brand h2 {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.car-model {
+  margin-top: 20px;
+}
+
+.car-model h3 {
+  font-size: 18px;
+}
+
+.car-model h4 {
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.car-model p {
+  font-size: 14px;
+  line-height: 1.4;
+  margin-top: 10px;
+}
+
+.car-model img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Stylizacja stopki */
+footer {
+  text-align: center;
+  padding: 30px 0; /* Zwiększ padding */
+  background-color: #333;
+  color: #fff;
+  font-size: 14px; /* Zmniejsz czcionkę */
+}
+/* Dodatkowe stylizacje można dopasować według potrzeb */
+
